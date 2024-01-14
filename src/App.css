@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body{
+  font-family: 'Abril Fatface', serif;
+}
+

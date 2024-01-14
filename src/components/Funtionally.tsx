@@ -1,9 +1,5 @@
-import React from "react";
-import { useScroll, useTransform } from "framer-motion";
 
 function Funtionally() {
-    const {scrollYProgress} = useScroll();
-    const x = useTransform(scrollYProgress, [0, 1], [0, -600])
     return (
     <div className="bg-black w-[100%] flex flex-col  justify-center mx-auto p-20" style={{borderRadius: "100px 100px 0px 0px", background: "url('https://w0.peakpx.com/wallpaper/487/602/HD-wallpaper-black-dots.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat"}} >
        <h1 className="text-white font-extrabold text-5xl lg:text-9xl md:text-8xl sm:text-3xl m-22 mx-auto" >FUNTIONALLY AESTHETIC!</h1>

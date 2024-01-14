@@ -78,7 +78,8 @@ const Link: React.FC<LinkProps> = ({heading, subHeading, imgSrc, href, TechStack
                 transition={{
                     type: "spring"
                 }}
-                className='relative z-10 block text-5xl font-extrabold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50'>
+                className='relative z-10 block text-3xl
+                sm:text-3xl lg:text-7xl md:text-6xl font-extrabold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50'>
                     {heading.split("").map((l, i) => {
                         return <span key={i}>{l}</span>
                     })}

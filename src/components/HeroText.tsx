@@ -1,4 +1,3 @@
-import React from 'react'
 import SVG from './SVG'
 import {motion} from "framer-motion"
 import { animationStart, reveal } from '../utils/animation'

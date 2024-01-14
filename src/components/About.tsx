@@ -39,7 +39,7 @@ const About = () => {
                         </p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;name: <span className="text-yellow-300">'Neeraj Patil'</span>,</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;position: <span className="text-yellow-300">'fullstack-developer'</span>,</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;website: <span className="text-yellow-300">'<a href="https://scottwindon.com" target="_blank" className="text-yellow-300 hover:underline focus:border-none">https://scottwindon.com</a>'</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Degree: <span className="text-yellow-300">'<a href="https://scottwindon.com" target="_blank" className="text-yellow-300 hover:underline focus:border-none">BTech Engineering (Comps)</a>'</span>,</p>
                         <p>&nbsp;&nbsp;</p>
                         <p></p>
                     </div>

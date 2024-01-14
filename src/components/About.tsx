@@ -1,14 +1,9 @@
 import '../index.css'
 import '../App.css'
 import { motion } from "framer-motion"
-import { useRef } from 'react'
-import Resume from "../assets/NeerajPatilResume.pdf.pdf"
 
 const About = () => {
-  const scrollRef = useRef(null);
 
-  const handleResumeDownload = () => {
-  }
   return (
     <motion.div
     initial="hidden"

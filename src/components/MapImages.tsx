@@ -3,7 +3,7 @@ import Map2 from '../assets/map_2.png'
 
 const MapImages = () => {
   return (
-    <div className='absolute w-full flex justify-between transform -translate-y-200px -z-1 overflow-hidden'>
+    <div className='absolute w-full flex justify-between transform -translate-y-200px -z-1 overflow-hidden lg:h-[45vh]'>
         <img src={Map1} />
         <img src={Map2} />
     </div>

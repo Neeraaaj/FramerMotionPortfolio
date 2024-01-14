@@ -5,7 +5,7 @@ function Funtionally() {
        <h1 className="text-white font-extrabold text-5xl lg:text-9xl md:text-8xl sm:text-3xl m-22 mx-auto" >FUNTIONALLY AESTHETIC!</h1>
        <div className="bg-white w-[90%] relative h-[5px] rounded-xl justify-center mx-auto"></div>
        <div className="flex flex-col sm:flex-col lg:flex-row w-[100%] md:flex-row">
-            <h1 className="text-white m-5 w-[100%] sm:w-[100%] lg:w-[50%] p-5 text-4xl">I create stunning digital solutions
+            <h1 className="text-white m-5 w-[100%] sm:w-[100%] lg:w-[50%] p-5 text-4xl text-center">I create stunning digital solutions
                 that elevate your brand's presence
                 and deliver incredible user experiences.
             </h1>

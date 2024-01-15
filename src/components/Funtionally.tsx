@@ -1,3 +1,4 @@
+import File from "../assets/Image.png"
 
 function Funtionally() {
     return (

@@ -13,15 +13,14 @@ interface LinkProps {
 
 const Projects: React.FC = () => {
   return (
-    <section className='bg-gray-100 min-h-screen md:p-8 
+    <section className='bg-white min-h-screen md:p-8 
     p-12 sm:p-5 
     overflow-hidden
     mt-[-90px]' style={{borderRadius: "100px 100px 0 0"}} >
         <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-pink-100 to-violet-900 font-bold text-[10vw]
         m-2 w-[100vw] sm:w-[100vw] lg:text-10xl'>
-            Featured  Work
-        </h1>
-        <div className='mx-auto max-w-5xl bg-black rounded-lg p-15' style={{boxShadow: "7px 8px 6px 2px gray"}}>
+            Featured  Work</h1>
+        <div className='mx-auto max-w-5xl bg-black rounded-lg p-15 mt-12' style={{boxShadow: "7px 8px 6px 2px gray"}}>
             <Link 
             heading={"Washoo"}
             subHeading={`Washoo, a forward-thinking car detailing service, now brings the luxury of professional car cleaning to your doorstep. With a user-friendly website designed for seamless navigation, Washoo ensures a convenient booking experience for customers seeking top-notch car detailing services.`}

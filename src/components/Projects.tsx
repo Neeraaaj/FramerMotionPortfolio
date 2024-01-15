@@ -85,10 +85,10 @@ const Link: React.FC<LinkProps> = ({heading, subHeading, imgSrc, href, TechStack
                         return <span key={i}>{l}</span>
                     })}
                 </motion.span>
-                <span className='relative mt-4 z-10 block text-neutral-50 lg:text-neutral-500 md:text-neutral-500 sm:text-neutral-50
-                sm:flex-end transition-colors duration:500 group-hover:text-neutral-50'>{subHeading}</span>
-                <span className='relative mt-4 z-10 block text-neutral-50 lg:text-neutral-500 md:text-neutral-500 sm:text-neutral-50
-                sm:flex-end transition-colors duration:500 group-hover:text-neutral-50'>{TechStacks}</span>
+                <h5 className='relative mt-4 z-10 block text-neutral-50 lg:text-neutral-500 md:text-neutral-500 sm:text-neutral-50
+                sm:flex-end transition-colors duration:500 group-hover:text-neutral-50'>{subHeading}</h5>
+                <h5 className='relative mt-4 z-10 block text-neutral-50 lg:text-neutral-500 md:text-neutral-500 sm:text-neutral-50
+                sm:flex-end transition-colors duration:500 group-hover:text-neutral-50'>{TechStacks}</h5>
             </div>
             
             <motion.img 

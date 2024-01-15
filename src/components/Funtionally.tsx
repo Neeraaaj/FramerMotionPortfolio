@@ -1,7 +1,7 @@
 
 function Funtionally() {
     return (
-    <div className="bg-black w-[100%] flex flex-col  justify-center mx-auto p-20" style={{borderRadius: "100px 100px 0px 0px", background: "url('https://t3.ftcdn.net/jpg/02/43/36/88/360_F_243368800_iYenQw8k85GTsJ39VHFxanBkj3MQxzKW.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat"}} >
+    <div className="bg-black w-[100%] flex flex-col  justify-center mx-auto p-20" style={{borderRadius: "100px 100px 0px 0px", background: "url('https://imgcdn.agendadigitale.eu/wp-content/uploads/2019/03/11143649/Dark_patterns_1.jpg')", backgroundSize: "120%", backgroundRepeat: "no-repeat"}} >
        <h1 className="text-white font-extrabold text-3xl lg:text-9xl md:text-8xl sm:text-3xl text-center m-20 flex justify-center
        " >FUNTIONALLY AESTHETIC!</h1>
        <div className="bg-white w-[90%] relative h-[5px] rounded-xl justify-center mx-auto"></div>

@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
   return (
     <section className='bg-white
     sm:p-5 rounded-xl
-    mt-[-100px] z-10' style={{borderRadius: "100px 100px 0 0"}} >
+    mt-[-100px] z-10' style={{borderRadius: "100px 100px 0 0", background: "white"}} >
         <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-violet-900 font-normal text-[10vw]
         m-2 w-[100vw] sm:w-[100vw] lg:text-10xl'>
             Featured  Work</h1>

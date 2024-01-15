@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
     <section className='bg-white min-h-screen md:p-8 
     p-12 sm:p-5 
     overflow-hidden
-    mt-[5vw]' style={{borderRadius: "100px 100px 0 0"}} >
+    mt-[-100px]' style={{borderRadius: "100px 100px 0 0"}} >
         <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-violet-900 font-normal text-[10vw]
         m-2 w-[100vw] sm:w-[100vw] lg:text-10xl'>
             Featured  Work

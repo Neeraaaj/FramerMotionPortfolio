@@ -17,7 +17,8 @@ const HeroText = () => {
             transition={{delay: animationStart + 1, duration: 0.6}}
         className='flex flex-col text-2xl lg:text-6xl sm:text-3xl <md:text-1xl font-bold mb-30px pt-100px '>
             <span className='flex 
-            text-4xl sm:text-4xl lg:text-8xl items-center gap-10px'>Delivering <SVG /> Industry's</span>
+            text-[7vw] sm:text-4xl 
+            md:text-7xl lg:text-8xl items-center gap-10px'>Delivering <SVG /> Industry's</span>
             <span>Top Talents Work</span>
         </motion.div>
         <motion.div 

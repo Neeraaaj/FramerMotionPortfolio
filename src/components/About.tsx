@@ -21,9 +21,9 @@ const About = () => {
               <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
                 <h2 className="text-5xl md:text-8xl drop-shadow-lg font-bold sm:text-4xl animate-bounce">About me</h2>
 
-                <p className="mt-4 text-gray-800">
+                <h5 className="mt-4 text-gray-800 text-2xl">
                 I'm a passionate web developer and designer with proficiency in HTML, CSS, JavaScript, React, and various backend technologies. Over the course of my career, I've had the privilege of working on diverse projects, ranging from e-commerce websites to interactive web applications, consistently delivering high-quality results.
-                </p>
+                </h5>
 
                   
               </div>

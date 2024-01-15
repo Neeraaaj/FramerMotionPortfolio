@@ -1,17 +1,11 @@
 
 function Funtionally() {
     return (
-    <div className="bg-black w-[100%] flex flex-col  justify-center mx-auto p-20" style={{borderRadius: "100px 100px 0px 0px", background: "url('https://imgcdn.agendadigitale.eu/wp-content/uploads/2019/03/11143649/Dark_patterns_1.jpg')", backgroundSize: "120%", backgroundRepeat: "no-repeat"}} >
-       <h1 className="text-white font-extrabold text-3xl lg:text-9xl md:text-8xl sm:text-3xl text-center m-20 flex justify-center
-       " >FUNTIONALLY AESTHETIC!</h1>
-       <div className="bg-white w-[90%] relative h-[5px] rounded-xl justify-center mx-auto"></div>
-       <div className="flex flex-col sm:flex-col lg:flex-row w-[100%] md:flex-row">
-            <h1 className="text-white w-[200px] sm:w-[100%] lg:w-[50%] p-5 text-2xl lg:text-5xl">I create stunning digital solutions
+    <div className="bg-black w-[100%] flex flex-col h-[120vh] justify-center mx-auto p-20" style={{borderRadius: "90px 90px 0px 0px", background: `url('https://imgcdn.agendadigitale.eu/wp-content/uploads/2019/03/11143649/Dark_patterns_1.jpg')`}} >
+        <h1 className="mb-4 text-[12vw] text-center text-white font-extrabold leading-none tracking-tight md:text-8xl lg:text-9xl dark:text-white">Funtionally Aesthetic!</h1>
+        <p className="text-4xl font-normal text-white  mx-auto lg:text-5xl mt-8 md:text-6xl w-[70vw] lg:w-[80vw] md:[85vw]">create stunning digital solutions
                 that elevate your brand's presence
-                and deliver incredible user experiences.
-            </h1>
-            <h4 className="text-white text-2xl m-5 lg:text-4xl md:text-3xl text-center ">FUNTIONALLY AESTHETIC</h4>
-       </div>
+                and deliver incredible user experiences.</p>
     </div>
   );
 }

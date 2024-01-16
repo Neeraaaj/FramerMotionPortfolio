@@ -4,7 +4,7 @@ import File from '../assets/Links.png'
 const Video = () => {
   return (
     <div className='p-10 h-[80vh]' style={{borderRadius: "0 0 100px 100px", background: `url(${File})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
-        <h1 className='text-black text-5xl font-extrabold text-center p-5 bg-white rounded-4xl'>Beyond the Screen: Web Development and Educational Ventures</h1>
+        <h1 className='text-black text-5xl font-extrabold text-center p-5 bg-white rounded-4xl' style={{background: "white"}}>Beyond the Screen: Web Development and Educational Ventures</h1>
         <div className="relative mx-auto border-gray-700 mt-5 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
     <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
         <video controls>

@@ -19,7 +19,7 @@ const HeroText = () => {
             <span className='flex 
             text-[7vw] sm:text-4xl 
             md:text-7xl lg:text-8xl items-center gap-10px'>Delivering <SVG /> Industry's</span>
-            <span>Top Talents Work</span>
+            <span className="p-2 sm:p-2 md:p-6 lg:p-7">Top Talents Work</span>
         </motion.div>
         <motion.div 
             variants={reveal}

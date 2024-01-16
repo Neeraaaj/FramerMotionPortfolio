@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi'
+import '../index.css'
 
 interface LinkProps {
     heading: string;
@@ -13,11 +14,11 @@ interface LinkProps {
 
 const Projects: React.FC = () => {
   return (
-    <section className='bg-white
+   <section className='bg-white
     sm:p-5 rounded-xl
-    mt-[-100px] z-10' style={{borderRadius: "100px 100px 0 0", background: "white"}} >
+    mt-[-100px] p-5' style={{borderRadius: "100px 100px 0 0", background: "white"}} id="subhead">
         <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-violet-900 font-normal text-[10vw]
-        m-2 w-[100vw] sm:w-[100vw] lg:text-10xl p-6'>
+        m-2 w-[100vw] sm:w-[100vw] lg:text-10xl'>
             Featured  Work</h1>
         <div className='mx-auto max-w-5xl bg-black rounded-lg p-15 mt-12' style={{boxShadow: "7px 8px 6px 2px gray"}}>
             <Link 

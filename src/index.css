@@ -27,3 +27,13 @@ p{
 #sub-head{
   font-family: 'Abril Fatface', serif;
 }
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  #subhead{
+    margin-top: -60%;
+  }
+
+  #head{
+    margin-top: -70%;
+  }
+}

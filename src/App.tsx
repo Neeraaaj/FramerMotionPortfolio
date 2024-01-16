@@ -5,6 +5,7 @@ import About from './components/About'
 import Funtionally from './components/Funtionally'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Video from './components/Video'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Funtionally />
       <Projects />
+      <Video />
       <Contact />
     </>
   )

@@ -17,7 +17,7 @@ const About = () => {
         }
       >
         <img
-          src={'../public/desktop2.png'}
+          src={'https://cdn.dribbble.com/userupload/14134632/file/original-085864cd70dedc2e84ed818654b73385.png?resize=1024x640'}
           alt="hero"
           height={720}
           width={1400}

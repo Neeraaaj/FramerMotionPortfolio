@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { ContainerScroll } from "../ui/macbook-scroll";
 
 const About = () => {
@@ -18,7 +17,7 @@ const About = () => {
         }
       >
         <img
-          src={'../public/desktop (2).png'}
+          src={'../public/desktop2.png'}
           alt="hero"
           height={720}
           width={1400}

@@ -1,54 +1,149 @@
-import '../index.css'
-import '../App.css'
-import { motion } from "framer-motion"
+"use client";
+import { ContainerScroll } from "../ui/macbook-scroll";
 
 const About = () => {
-
   return (
-    <motion.div
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-    transition={{ duration: 0.5 }}
-    variants={{
-      visible: { opacity: 1, scale: 1 },
-      hidden: { opacity: 0, scale: 0 }
-    }}
-    >
-        <section className='flex justify-center'>
-          <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-            <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-              <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-                <h2 className="text-5xl md:text-8xl drop-shadow-lg font-bold sm:text-4xl animate-bounce">About me</h2>
-
-                <h5 className="mt-4 text-gray-800 text-2xl">
-                I'm a passionate web developer and designer with proficiency in HTML, CSS, JavaScript, React, and various backend technologies. Over the course of my career, I've had the privilege of working on diverse projects, ranging from e-commerce websites to interactive web applications, consistently delivering high-quality results.
-                </h5>
-
-                  
-              </div>
-
-              <div className="bg-gray-200">
-                <div className="rounded-lg shadow-xl bg-gray-700 text-white w-[100%] h-[300px] shadow-slate-500 shadow-xl ">
-                    <div className="border-b border-gray-800 px-8 py-3 flex flex-end">
-                        <div className="inline-block w-3 h-3 mr-2 rounded-full bg-red-500"></div><div className="inline-block w-3 h-3 mr-2 rounded-full bg-yellow-300"></div><div className="inline-block w-3 h-3 mr-2 rounded-full bg-green-400"></div>
-                    </div>
-                     <div className="px-8 py-6 flex-end">
-                        <p><em className="text-blue-400">const</em> <span className="text-green-400">aboutMe</span> <span className="text-pink-500">=</span> <em className="text-blue-400">function</em>() {'{'}</p>
-                        <p>&nbsp;&nbsp;<span className="text-pink-500">return</span></p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;name: <span className="text-yellow-300">'Neeraj Patil'</span>,</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;position: <span className="text-yellow-300">'fullstack-developer'</span>,</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Degree: <span className="text-yellow-300">'<a href="https://scottwindon.com" target="_blank" className="text-yellow-300 hover:underline focus:border-none">BTech Engineering (Comps)</a>'</span>,</p>
-                        <p>&nbsp;&nbsp;</p>
-                        <p>{'}'}</p>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-    </motion.div>
-  )
+    <div className="flex flex-col overflow-hidden">
+      <ContainerScroll
+        titleComponent={
+          <>
+            <h1 className="text-4xl font-semibold text-black dark:text-white">
+              not so boring<br />
+              <span className="text-4xl md:text-[8rem] font-bold mt-1 leading-none text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-violet-900">
+                ABOUT SECTION
+              </span>
+            </h1>
+          </>
+        }
+      >
+        <img
+          src={'../public/desktop (2).png'}
+          alt="hero"
+          height={720}
+          width={1400}
+          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          draggable={false}
+        />
+      </ContainerScroll>
+    </div>
+  );
 }
 
-export default About
+export const users = [
+  {
+    name: "Manu Arora",
+    designation: "Founder, Algochurn",
+    image: "https://picsum.photos/id/10/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Sarah Singh",
+    designation: "Founder, Sarah's Kitchen",
+    image: "https://picsum.photos/id/11/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "John Doe",
+    designation: "Software Engineer, Tech Corp",
+    image: "https://picsum.photos/id/12/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Jane Smith",
+    designation: "Product Manager, Innovate Inc",
+    image: "https://picsum.photos/id/13/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Robert Johnson",
+    designation: "Data Scientist, DataWorks",
+    image: "https://picsum.photos/id/14/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Emily Davis",
+    designation: "UX Designer, DesignHub",
+    image: "https://picsum.photos/id/15/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Michael Miller",
+    designation: "CTO, FutureTech",
+    image: "https://picsum.photos/id/16/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Sarah Brown",
+    designation: "CEO, StartUp",
+    image: "https://picsum.photos/id/17/300/300",
+  },
+  {
+    name: "James Wilson",
+    designation: "DevOps Engineer, CloudNet",
+    image: "https://picsum.photos/id/18/300/300",
+    badge: "Something",
+  },
+  {
+    name: "Patricia Moore",
+    designation: "Marketing Manager, MarketGrowth",
+    image: "https://picsum.photos/id/19/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Richard Taylor",
+    designation: "Frontend Developer, WebSolutions",
+    image: "https://picsum.photos/id/20/300/300",
+  },
+  {
+    name: "Linda Anderson",
+    designation: "Backend Developer, ServerSecure",
+    image: "https://picsum.photos/id/21/300/300",
+  },
+  {
+    name: "William Thomas",
+    designation: "Full Stack Developer, FullStack",
+    image: "https://picsum.photos/id/22/300/300",
+    badge: "Badger",
+  },
+  {
+    name: "Elizabeth Jackson",
+    designation: "Project Manager, ProManage",
+    image: "https://picsum.photos/id/23/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "David White",
+    designation: "Database Administrator, DataSafe",
+    image: "https://picsum.photos/id/24/300/300",
+    badge: "Advocate",
+  },
+  {
+    name: "Jennifer Harris",
+    designation: "Network Engineer, NetConnect",
+    image: "https://picsum.photos/id/25/300/300",
+  },
+  {
+    name: "Charles Clark",
+    designation: "Security Analyst, SecureIT",
+    image: "https://picsum.photos/id/26/300/300",
+  },
+  {
+    name: "Susan Lewis",
+    designation: "Systems Analyst, SysAnalyse",
+    image: "https://picsum.photos/id/27/300/300",
+  },
+  {
+    name: "Joseph Young",
+    designation: "Mobile Developer, AppDev",
+    image: "https://picsum.photos/id/28/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Margaret Hall",
+    designation: "Quality Assurance, BugFree",
+    image: "https://picsum.photos/id/29/300/300",
+    badge: "Developer",
+  },
+];
+
+export default About;

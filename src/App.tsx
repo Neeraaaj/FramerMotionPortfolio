@@ -2,8 +2,7 @@ import './App.css'
 import Home from './components/Home'
 import './App.css'
 import About from './components/About'
-import Funtionally from './components/Funtionally'
-import Projects from './components/Projects'
+import ProjectGrid from './components/ProjectGrid'
 import Contact from './components/Contact'
 
 function App() {
@@ -12,8 +11,7 @@ function App() {
     <>
       <Home />
       <About />
-      <Funtionally />
-      <Projects />
+      <ProjectGrid />
       <Contact />
     </>
   )

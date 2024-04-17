@@ -67,7 +67,7 @@ const Link: React.FC<LinkProps> = ({heading, subHeading, imgSrc, href, TechStack
         initial="initial"
         whileHover="whileHover"
         target='_blank'
-        href={href} className='group relative flex items-center justify-between border-b-2  border-neutral-700 py-4 transition-colors duration-500 md:py-8 hover:border-neutral-50 flex flex-col lg:flex-row' >
+        href={href} className='group relative items-center justify-between border-b-2  border-neutral-700 py-4 transition-colors duration-500 md:py-8 hover:border-neutral-50 flex flex-col lg:flex-row' >
             <div className='m-15'>
                 <motion.span 
                 variants={{

@@ -144,14 +144,18 @@ const SkeletonThree = () => {
         repeat: Infinity,
         repeatType: "reverse",
       }}
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
-      style={{
-        background:
-          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
-        backgroundSize: "400% 400%",
-      }}
+      className="flex flex-1 w-full h-full min-h-[6rem] rounded-lg flex-col space-y-2"
     >
-      <motion.div className="h-full w-full rounded-lg"></motion.div>
+      <motion.div
+        className="h-full w-full rounded-2xl bg-white p-1 dark:bg-black dark:border-white/[0.1] flex flex-col items-center justify-center cursor-pointer"
+      >
+        <img
+          src="https://cdn.dribbble.com/userupload/10314602/file/original-c3df7316ad3caece7cfab6fe434fd3f2.png?resize=1024x768"
+          alt="avatar"
+          className="w-full h-fullz rounded-xl"
+        />
+        
+      </motion.div>
     </motion.div>
   );
 };
@@ -190,8 +194,6 @@ const SkeletonFour = () => {
         <img
           src="https://cdn.dribbble.com/userupload/14130294/file/original-a73585504741360dec4cdcbddb4bf13d.png?resize=1024x485"
           alt="avatar"
-          height="100"
-          width="100"
           className="w-full h-full rounded-xl"
         />
         
@@ -200,8 +202,6 @@ const SkeletonFour = () => {
         <img
           src="https://cdn.dribbble.com/userupload/14131117/file/original-857d9db20d641cf54cc70535378a694b.png?resize=1024x492"
           alt="avatar"
-          height="100"
-          width="100"
           className="rounded-xl w-full h-full"
         />
        
@@ -213,9 +213,7 @@ const SkeletonFour = () => {
         <img
           src="https://cdn.dribbble.com/userupload/10126456/file/original-9106600236f652da4dc888f454d6b47d.png?resize=1024x617"
           alt="avatar"
-          height="100"
-          width="120"
-          className="rounded-xl h-full w-[120vw]"
+          className="rounded-xl h-full w-[fit-content]"
         />
         
       </motion.div>
@@ -252,7 +250,7 @@ const SkeletonFive = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 mt-10"
     >
       <motion.div
         variants={variants}
@@ -278,10 +276,10 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "AI Content Generation",
+    title: "saaS platform",
     description: (
-      <span className="text-sm">
-        Experience the power of AI in generating unique content.
+      <span className="text-4xl text-white">
+        COMING SOON...
       </span>
     ),
     header: <SkeletonOne />,
@@ -291,8 +289,8 @@ const items = [
   {
     title: "Automated Proofreading",
     description: (
-      <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+      <span className="text-4xl text-white">
+        COMING SOON...
       </span>
     ),
     header: <SkeletonTwo />,
@@ -300,10 +298,10 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Contextual Suggestions",
+    title: "NLP (Natural Language Processing)",
     description: (
-      <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
+      <span className="text-2xl text-white">
+        A review system created using pure natural language processing information retrieval approach (Bag Of Words)
       </span>
     ),
     header: <SkeletonThree />,
@@ -327,8 +325,8 @@ const items = [
   {
     title: "Text Summarization",
     description: (
-      <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+      <span className="text-4xl text-white">
+        COMING SOON...
       </span>
     ),
     header: <SkeletonFive />,

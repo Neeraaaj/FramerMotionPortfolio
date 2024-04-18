@@ -1,7 +1,10 @@
 "use client";
 import { ContainerScroll } from "../ui/macbook-scroll";
+import { useMediaQuery } from "react-responsive";
 
 const About = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // Define the breakpoint for mobile screens
+
   return (
     <div className="flex flex-col overflow-hidden">
       <ContainerScroll
@@ -9,7 +12,7 @@ const About = () => {
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
               not so boring<br />
-              <span className="text-4xl md:text-[8rem] font-bold mt-1 leading-none text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-violet-900">
+              <span className="text-[5rem] md:text-[8rem] font-bold mt-1 leading-none text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-violet-900">
                 ABOUT SECTION
               </span>
             </h1>
@@ -17,10 +20,8 @@ const About = () => {
         }
       >
         <img
-          src={'https://cdn.dribbble.com/userupload/14134632/file/original-085864cd70dedc2e84ed818654b73385.png?resize=1024x640'}
+          src={isMobile ? '../public/mobile_about.png' : 'https://cdn.dribbble.com/userupload/14134632/file/original-085864cd70dedc2e84ed818654b73385.png?resize=1024x640'}
           alt="hero"
-          height={720}
-          width={1400}
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
         />

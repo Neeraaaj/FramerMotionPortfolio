@@ -20,7 +20,7 @@ const About = () => {
         }
       >
         <img
-          src={isMobile ? '../public/mobile_about.png' : '../public/desktop2.png'}
+          src={isMobile ? '../public/mobile_about.png' : 'https://cdn.dribbble.com/userupload/14134632/file/original-085864cd70dedc2e84ed818654b73385.png?resize=1024x640'}
           alt="hero"
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}

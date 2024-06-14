@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 const BentoGridThirdDemo = () => {
   return (
-    <BentoGrid className="max-w-8xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-8xl mx-auto md:auto-rows-[20rem] rounded-e-2xl">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -60,29 +60,9 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 rounded-3xl"
     >
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-      </motion.div>
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
+      <img src="https://cdn.dribbble.com/userupload/15106304/file/original-ef174615f009078b266887c6e338b658.png?resize=1024x469" className="max-h-[60vh] rounded-xl"/>
     </motion.div>
   );
 };
@@ -211,7 +191,18 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white dark:bg-black dark:border-white/[0.1] border  flex flex-col items-center p-1 justify-center"
       >
         <img
-          src="https://cdn.dribbble.com/userupload/10126456/file/original-9106600236f652da4dc888f454d6b47d.png?resize=1024x617"
+          src="https://cdn.dribbble.com/userupload/15106869/file/original-378b6ed97f32de44732903c11ae1e470.png?resize=1024x465"
+          alt="avatar"
+          className="rounded-xl h-full w-[fit-content]"
+        />
+        
+      </motion.div>
+      <motion.div
+        variants={second}
+        className="h-full w-1/3 rounded-2xl bg-white dark:bg-black dark:border-white/[0.1] border  flex flex-col items-center p-1 justify-center"
+      >
+        <img
+          src="https://cdn.dribbble.com/userupload/15107090/file/original-a6ac579ba3a4293f979b999d56e64d2a.png?resize=1024x464"
           alt="avatar"
           className="rounded-xl h-full w-[fit-content]"
         />
@@ -279,7 +270,8 @@ const items = [
     title: "saaS platform",
     description: (
       <span className="text-4xl text-white">
-        COMING SOON...
+        A Ai Twitter Bot facilitating a service of generating captions based on various tone like passionate, funny, sarcastic, professional.
+        Utilizing the full stack compatibility of NextJS-14, vercel-ai-sdk, groq, and shadcn.
       </span>
     ),
     header: <SkeletonOne />,

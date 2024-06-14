@@ -66,7 +66,6 @@ const Contact = () => {
         </ul>
           </div>
           <p className="text-center text-base md:text-[1.6rem] font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            This globe is interactive and customizable. Have fun with it, and
             don&apos;t forget to share it. :)
           </p>
         </motion.div>

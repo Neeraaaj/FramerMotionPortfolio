@@ -1,10 +1,6 @@
-import { Canvas } from '@react-three/fiber';
-import {motion} from 'framer-motion'
-import Model from '../ui/globe';
-
+import { motion } from 'framer-motion'
 
 const Contact = () => {
-  
   return (
     <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
@@ -69,17 +65,6 @@ const Contact = () => {
             don&apos;t forget to share it. :)
           </p>
         </motion.div>
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
-            <Canvas camera={{fov: 25, near: 0.1, far: 900, position: [0, 0, 7]}} className='items-center mx-[-5vw] '>
-              <spotLight position={[-5, 0, -1]} intensity={Math.PI * 35} color={"black"}/>
-              <spotLight position={[5, -3,-3]} intensity={Math.PI *725} color={"red"}/>
-              <spotLight position={[10,-9,-1]} intensity={Math.PI * 245} color={"yellow"}/>
-              <hemisphereLight intensity={.195} />
-              <ambientLight intensity={.965}/>
-              <Model />
-            </Canvas>
-        </div>
       </div>
     </div>
   );

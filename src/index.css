@@ -1,39 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 
-
-body{
-  font-family: 'Abril Fatface', serif;
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
-span{
-  font-family: 'Abril Fatface', serif;
+html {
+  scroll-behavior: smooth;
 }
 
-h1{
-  font-family: 'Abril Fatface', serif;
-}
-h2{
-  font-family: 'Abril Fatface', serif;
+.landing-page,
+.landing-page * {
+  font-family: 'Inter', sans-serif;
 }
 
-h4{
-  font-family: 'Abril Fatface', serif;
+.hero-script {
+  font-family: 'Caveat', cursive;
 }
 
-p{
-  font-family: 'Abril Fatface', serif;
+.cloud-layer {
+  height: min(55vh, 560px);
+  will-change: transform, opacity;
 }
 
-#sub-head{
-  font-family: 'Abril Fatface', serif;
+.cloud-layer-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  filter: contrast(1.04) brightness(1.03) saturate(1.05);
+  -webkit-mask-image: linear-gradient(to top, #000 62%, transparent 100%);
+  mask-image: linear-gradient(to top, #000 62%, transparent 100%);
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
-  #subhead{
-    margin-top: -60%;
-  }
+.what-i-do,
+.what-i-do * {
+  font-family: 'Inter', sans-serif;
+}
 
-  #head{
-    margin-top: -70%;
-  }
+.what-i-do-star {
+  color: #2f6bff;
+}
+
+.what-i-do-script {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
 }
